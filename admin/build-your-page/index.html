@@ -1,0 +1,41 @@
+<script src="widgets.js"></script>
+
+<body onLoad="main()">
+
+<div style="padding: 2; text-align: center; background-color:#8c8; font-family: courier">
+</div>
+ 
+<table border="0">
+
+  <tr>
+    <td>Drop image</td>
+    <td><textarea style="font-size: 40%; width: 100%" rows="1" id="drop_image"></textarea></td>
+    <td><img style="height: 20" src="i/resize.gif" onClick="get_drop_image()"></td>
+  </tr>
+
+  <tr>
+    <td>Drop text</td>
+    <td><textarea style="font-size: 40%; width: 100%" rows="1" id="drop_text"></textarea></td>
+    <td><img style="height: 20" src="i/resize.gif" onClick="get_drop_text()"></td>
+  </tr>
+
+  <tr>
+    <td colspan="3">
+
+      <nobr>
+      <a href="javascript:;" onClick="place_new_widget( new EditText() )">text</a>
+      &bull;
+      <a href="javascript:;" onClick="place_new_widget( new Image( '0.jpg' ) )">image</a>
+      &bull;
+      <a href="">here</a>
+      &bull;
+      <a href="javascript:;" onClick="save()">save</a>
+      &bull;
+      <a href="javascript:;" onClick="load()">load</a>
+      </nobr>
+
+    </td>
+  </tr>
+</table>
+
+</body>
